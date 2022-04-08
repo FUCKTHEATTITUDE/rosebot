@@ -9,7 +9,7 @@ RUN apt-get -y update
 
 RUN apt-get -y install git gcc python3-dev
 
-RUN pip install libxml2
+RUN pip install lxml==3.6.4
 
 COPY . /app/
 WORKDIR /app/
